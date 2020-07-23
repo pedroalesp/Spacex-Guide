@@ -13,40 +13,42 @@ h6 {
 
 .header {
     width: 100%;
-    min-height: 25%;
+    max-height: 25%;
     display: flex;
     position: relative;
+    align-items: center;
 }
 .header--image {
     object-fit: cover;
     width: 100%;
-    min-height: 25%;
+    height: 25%;
     opacity: 1;
 }
 .header__container {
     color: #fff;
     text-shadow: 2px 2px 3px #000;
-}
-.header__container {
     position: absolute;
     padding-left: .5em;
+    font-size: 30px;
 }
 .main {
     background-color: #02040f;
     min-height: 60vh;
+    padding: 0 10px;
 }
 .main__title {
     margin: initial;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    padding: 10px 0;
     color: #fff;
+    font-size: 35px;
 }
 .main__container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     min-height: inherit;
     justify-content: space-around;
 }
@@ -59,14 +61,22 @@ h6 {
     overflow: hidden;
     transition: 300ms;
     transform-origin: top center;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.main__container--categories:hover{
+.main__container--categories:hover {
     transform: scale(1.2);
+    opacity: .5;
 }
 .main__container--categories:hover ~ .main__container--categories {
     transform: translate3d(0, 20px, 0);
 }
 .url--items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     text-decoration: none;
     padding: inherit;
@@ -84,8 +94,8 @@ h6 {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
 }
+
 
 @media screen and (max-width: 320px) {
     .header__title {
@@ -94,6 +104,38 @@ h6 {
     .header__subtitle {
         margin: 20px 0 0 0;
     }
+    .header--image {
+        max-height: 25vh;
+    }
+    .header__container {
+        align-items: flex-start;
+    }
+    .main__title {
+        font-size: 27px;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .header__container {
+        font-size: 16px;
+    }
+    .main__container {
+        justify-content: space-around;
+    }
+    .url--items {
+        display: flex;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .header {
+        height: 25%;
+        
+    }
+    .header--image {
+        height: 100%;
+    }
+    .main__container {
+        flex-direction: column;
+    }
 }
