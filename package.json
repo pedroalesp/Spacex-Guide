@@ -1,0 +1,15 @@
+{
+  "name": "spacex",
+  "version": "1.0.0",
+  "description": "A project using the Space X public API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Space",
+    "X"
+  ],
+  "author": "Pedro Silva",
+  "license": "MIT"
+}
