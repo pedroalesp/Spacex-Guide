@@ -4,12 +4,16 @@
   "description": "A project using the Space X public API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "capsules:app": "node src/capsules/app.js"
   },
   "keywords": [
     "Space",
     "X"
   ],
   "author": "Pedro Silva",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
