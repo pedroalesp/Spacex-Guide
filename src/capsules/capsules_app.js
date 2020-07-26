@@ -1,6 +1,6 @@
-const fetchData = require('../utils/fetchData')
+//const fetchData = require('../utils/fetchData')
 const API = 'https://api.spacexdata.com/v3/capsules/'
-const text0 = document.getElementById("text0")
+//const text0 = document.getElementById("text0")
 
 
 class Capsules {
@@ -27,6 +27,7 @@ class Capsules {
             const launch = api_data[i].original_launch
             const details = api_data[i].details
             let capsules = {serial, id, status, launch, details}
+            console.log(capsules)
             text0.innerHTML = "holaa"
         }
 
