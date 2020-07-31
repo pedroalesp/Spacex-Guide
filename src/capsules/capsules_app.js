@@ -1,6 +1,5 @@
 //const fetchData = require('../utils/fetchData')
 const API = 'https://api.spacexdata.com/v3/capsules/'
-const text1 = document.getElementById('text1')
 
 class Capsules {
     constructor () {
@@ -29,27 +28,14 @@ class Capsules {
             let capsule = {serial, id, status, launch, details}
             this.totalCapsules.push(capsule)
         }
-           this.builtCard(this.totalCapsules)
+        this.builtCard(this.totalCapsules)
     }
 
-    builtCard(capsules_atribute) {
+    builtCard(capsules) {
         for (let i = 0; i < this.totalCapsules.length; i++) {
-            //console.log(this.totalCapsules[i])//reemplazar console.log por creador de carta
-            this.cardGenerator(this.totalCapsules[i].serial)
-            this.cardGenerator(this.totalCapsules[i].id)
-            this.cardGenerator(this.totalCapsules[i].status)
-            this.cardGenerator(this.totalCapsules[i].launch)
-            this.cardGenerator(this.totalCapsules[i].details)
-            //debugger
+            const cardContent = cardGenerator(this.totalCapsules[i])
             }
         }
-    
-
-    cardGenerator (capsules_atribute) {
-        debugger
-        text1.innerHTML = capsules_atribute.toString
-    }
-
 }
 
 let getAllCapsules = new Capsules()
