@@ -17,8 +17,4 @@ const cardGenerator = (capsule_data) => {
     card.appendChild(subcard)
     card.classList.add('cards')
     subcard.classList.add('subcards')
-    
-    
-    
-    
 }
