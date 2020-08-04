@@ -103,7 +103,7 @@ h6 {
     width: 300px;
     flex-direction: column;
     border-radius: 30px;
-    padding: .5em 0 .5em .5em;
+    padding: .5em;
     margin: 0.8em;
     background-color: #edf6f9;
     box-shadow: 1px 4px 6px 2px #02040f;
@@ -166,7 +166,7 @@ h6 {
     align-items: center;
 }
 .cards__dragons {
-    width: 75%;
+    width: 50%;
 }
 .cards__dragons--img {
     width: 50%;

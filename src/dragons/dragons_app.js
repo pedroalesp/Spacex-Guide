@@ -1,7 +1,7 @@
 //const fetchData = require('../utils/fetchData')
 const API = 'https://api.spacexdata.com/v3/dragons/'
 
-class Capsules {
+class Dragons {
     constructor () {
         this.getData(API)
         this.totalDragons = []
@@ -46,4 +46,4 @@ class Capsules {
     }
 }
 
-let getAllCapsules = new Capsules()
+let getAllDragons = new Dragons ()
