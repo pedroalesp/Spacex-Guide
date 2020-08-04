@@ -24,6 +24,8 @@ const cardGenerator_Dragons = (dragons_data) => {
     //card.appendChild(subcard)
     card.appendChild(imageCard)
     card.classList.add('cards')
+    card.classList.add('cards__dragons')
+    imageCard.classList.add('cards__dragons--img')
     //subcard.classList.add('subcards')
 
 }

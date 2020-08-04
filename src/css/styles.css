@@ -160,7 +160,24 @@ h6 {
     text-align: center;
     margin: .3em 0 0 0;
 }
-
+.content_container--dragons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.cards__dragons {
+    width: 75%;
+}
+.cards__dragons--img {
+    width: 50%;
+    box-shadow: 1px 3px 6px 1px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: .4em 0;
+}
+.cards__dragons--img img {
+    width: 100%;
+}
 
 @media screen and (max-width: 320px) {
     .header__title {
