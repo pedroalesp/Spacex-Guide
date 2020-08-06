@@ -66,13 +66,6 @@ h6 {
     align-items: center;
     justify-content: center;
 }
-.main__container--categories:hover {
-    transform: scale(1.2);
-    opacity: .5;
-}
-.main__container--categories:hover ~ .main__container--categories {
-    transform: translate3d(0, 20px, 0);
-}
 .url--items {
     display: flex;
     align-items: center;
@@ -125,23 +118,17 @@ h6 {
     box-sizing: border-box;
     height: 7px;
 }
-.cards:hover .subcards {
-    display: inherit;
-    height: 150px;
-}
-.cards:hover ~.subcards{
-    height: 50px;
-}
 .subcards > p{
     margin: 0.2em;
 } 
 .content__container {
     background-color: #edf6f9;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 100vh;
+    justify-content: center;
 }
 .header__content {
     color: #fff;
@@ -177,6 +164,9 @@ h6 {
 }
 .cards__dragons--img img {
     width: 100%;
+}
+.cards__launches {
+    width: 30%;
 }
 
 @media screen and (max-width: 320px) {

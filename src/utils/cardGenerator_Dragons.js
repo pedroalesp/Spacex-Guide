@@ -7,7 +7,7 @@ const cardGenerator_Dragons = (dragons_data) => {
 
     card.innerHTML =
     `<p><strong>Name:</strong> ${dragons_data.name}</p>
-    p><strong>Type:</strong> ${dragons_data.type}</p>
+    <p><strong>Type:</strong> ${dragons_data.type}</p>
     <p><strong>Years on orbit:</strong> ${dragons_data.years_on_orbit}</p>
     <p><strong>Crew capacity:</strong> ${dragons_data.capacity}</p>
     <p><strong>Diameter:</strong> ${dragons_data.diameter} meters</p>
